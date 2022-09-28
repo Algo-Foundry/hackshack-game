@@ -36,7 +36,7 @@ Complete the code in `scripts/attack.js` to allow accounts to attack the monster
 Complete the code in `scripts/reward.js` so that the smart contract can dispense reward to the player that does the most damage.
 
 ## Hints
-1. The recipient of an inner transaction must be in the accounts array. This means that you will need to get the best player's address from the global state, convert it to the address string (because it returns as base64 format) and pass it into the accounts array when rewarding the player.
+1. The recipient of an inner transaction must be in the accounts array. This means that you will need to get the best player's address (MVP) from the global state, convert it to the address string (because it returns as base64 format) and pass it into the accounts array when rewarding the player.
 
 ## Setup instructions
 

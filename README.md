@@ -27,13 +27,13 @@ yarn run algob deploy scripts/deploy_game.js
 ## Calling the smart contract
 
 ### Opt-In
-Complete the code in `scripts/actions/optIn.js` to allow accounts to participate in the game.
+Complete the code in `scripts/optIn.js` to allow accounts to participate in the game.
 
 ### Attack
-Complete the code in `scripts/actions/attack.js` to allow accounts to attack the monster.
+Complete the code in `scripts/attack.js` to allow accounts to attack the monster.
 
 ### Reward
-Complete the code in `scripts/actions/reward.js` so that the smart contract can dispense reward to the player that does the most damage.
+Complete the code in `scripts/reward.js` so that the smart contract can dispense reward to the player that does the most damage.
 
 ## Hints
 1. The recipient of an inner transaction must be in the accounts array. This means that you will need to get the best player's address from the global state, convert it to the address string (because it returns as base64 format) and pass it into the accounts array when rewarding the player.

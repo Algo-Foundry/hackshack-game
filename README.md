@@ -19,9 +19,9 @@ Send 1 Algo to the player that does the most damage if the monster is dead. This
 ## Contract deployment
 Complete the code in `scripts/deploy.js` to deploy contract and fund it with 5 Algos.
 
-To deploy the contract,
+Use the makefile to compile the smart contracts from PyTeal to TEAL
 ```
-yarn run algob deploy scripts/deploy_game.js
+make game
 ```
 
 ## Calling the smart contract
@@ -48,9 +48,3 @@ npm install
 ### 2. Update environement variables
 1. Copy `.env.example` to `.env`.
 2. Update Algorand Sandbox credentials in `.env` file.
-
-### 3. To compile smart contracts
-Using makefile
-```
-make game
-```

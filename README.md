@@ -7,7 +7,7 @@ Complete the code in `assets\game_approval.py`. The smart contract should contai
 ### Initialization
 Creates a new monster with a specified amount of 5 health points and above. Also initialize the global state of the highest damage dealt to 0. 
 
-### Player opt In
+### Player opt in
 Initialize the local state of the damage done to the monster to 0. You should also prevent the player from making multiple opt in transactions.
 
 ### Attack monster
@@ -37,6 +37,7 @@ Complete the code in `scripts/reward.js` so that the smart contract can dispense
 
 ## Hints
 1. The recipient of an inner transaction must be in the accounts array. This means that you will need to get the best player's address (MVP) from the global state, convert it to the address string (because it returns as base64 format) and pass it into the accounts array when rewarding the player.
+2. Use the helper functions provided to read the contract's global and local state, or to submit transactions to the blockchain.
 
 ## Setup instructions
 
